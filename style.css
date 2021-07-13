@@ -58,7 +58,10 @@ body {
 .subheader h2 {
   padding: 15px;
   font-size: 32px;
+}
 
+.subheader i {
+  color: #B97A6C;
 }
 
 .content {
@@ -90,6 +93,14 @@ body {
 .grid .item p {
   color: gray;
   font-size: 16px;
+}
+
+.grid .item i {
+  color: #593584;
+}
+
+.icon {
+  font-size: 36px;
 }
 
 .app-footer {
