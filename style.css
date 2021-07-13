@@ -11,7 +11,13 @@
 
 html,
 body {
+  height: 100%;
+}
+
+body {
   font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 .container {
@@ -49,12 +55,69 @@ body {
 
 }
 
-.subheader h3 {
+.subheader h2 {
   padding: 15px;
+  font-size: 32px;
 
 }
-
 
 .content {
   background-color: var(--secondary-color);
+  flex: 1 0 auto;
 }
+
+.concurrent h3 {
+  font-size: 16px;
+  color: #B97A6C;
+}
+
+.info h4 {
+  font-size: 16px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.grid .item {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.grid .item p {
+  color: gray;
+  font-size: 16px;
+}
+
+.app-footer {
+  background-color: var(--primary-color);
+  padding: 10px;
+  margin-top: 10px;
+  color: lightgrey;
+  font-size: 16;
+  flex-shrink: 0;
+}
+
+.app-footer a {
+  color: #593584;
+  font-size: 15px;
+}
+
+.app-footer a:hover {
+  color: white;
+}
+
+.app-footer ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.app-footer p {
+  display: flex;
+  justify-content: left;
+}
+
