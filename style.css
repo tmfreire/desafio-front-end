@@ -82,17 +82,24 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 10px;
+  border: 1px #ccc solid;
+  border-radius: 10px;
+  box-shadow: 1px 1px 2px #ccc solid;
+  background-color: var(--primary-color);
+  margin-bottom: 20px;
 }
 
 .grid .item {
   display: flex;
   flex-direction: column;
   padding: 10px;
+  align-items: center;
+  text-align: center;
 }
 
 .grid .item p {
   color: gray;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .grid .item i {
@@ -114,7 +121,7 @@ body {
 
 .app-footer a {
   color: #593584;
-  font-size: 15px;
+  font-size: 24px;
 }
 
 .app-footer a:hover {
